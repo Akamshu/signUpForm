@@ -17,7 +17,8 @@
   --content-paddingX-desktop: 3rem;
   --content-paddingX-mobile: 1.5rem;
   --input-border-color: #e5e7eb;
-  --button-background-color: #596d48;
+  --button-background-color: #596D48;
+  --error-border-color: rgb(248, 60, 60);
 }
 
 body {
@@ -91,7 +92,7 @@ body {
 
 .content__header {
   padding: 0 var(--content-paddingX-desktop);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -135,7 +136,7 @@ body {
 
 .form__input {
   font-size: 1rem;
-  padding: 5px;
+  padding: 4px;
   outline: none;
   border: 1px solid var(--input-border-color);
   border-radius: 5px;
@@ -146,17 +147,17 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.form__input--error {
-  border: 1px solid red;
+.form__input:invalid {
+  border: 1px solid var(--error-border-color);
 }
 
-.form__error-message {
+.form-error-message {
   opacity: 0;
   font-size: 0.8rem;
-  color: red;
+  color: var(--error-border-color);
 }
 
-.form__input--error + .form__error-message {
+.form__input:invalid + .form-error-message {
   opacity: 1;
 }
 
@@ -285,7 +286,10 @@ body {
   .content__main {
     text-align: center;
   }
-
+.content__header p{
+  text-align: justify;
+  font-size: 1rem;
+}
   .form__layout {
     display: flex;
     flex-direction: column;

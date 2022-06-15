@@ -12,28 +12,13 @@
       <div class="banner">
         <div class="banner__background"></div>
         <div class="banner__header">
-          <img
-            src="assets/odin-lined.png"
-            alt="odin logo"
-            class="banner__header__logo"
-          />
+          <img src="assets/odin-lined.png" alt="odin logo" class="banner__header__logo"/>
           <h2 class="banner__header__title">ODIN</h2>
         </div>
-        <p class="banner__background-credit">
-          Photo by
-          <a
-            class="banner__background-credit__link"
-            href="https://unsplash.com/@haliewestphoto"
-            target="_blank"
-            >Halie West</a
-          >
-          on
-          <a
-            class="banner__background-credit__link"
-            href="https://unsplash.com/photos/25xggax4bSA"
-            target="_blank"
-            >Unsplash</a
-          >
+        <p class="banner__background-credit"> Photo by<a class="banner__background-credit__link"
+            href="https://unsplash.com/@haliewestphoto"target="_blank">Halie West</a
+          > on <a class="banner__background-credit__link" href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
+            >Unsplash</a>
         </p>
       </div>
 
@@ -42,11 +27,9 @@
           <p class="content__header__main-heading">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams.
-            <br />
-            Sign up now to get started.
-          </p>
+           <br> Sign up <em>now</em>  to get started.</p> 
           <p class="content__header__secondary-heading">
-            You know you want to.
+            You <em>know</em> you want to.
           </p>
         </div>
         <div class="content__main">
@@ -56,38 +39,38 @@
             <div class="form__layout">
               <div class="form__input-container">
                 <label class="form__label" for="first-name">First Name</label>
-                <input class="form__input" type="text" id="first-name" />
+                <input class="form__input" type="text" id="first-name" required>
               </div>
               <div class="form__input-container">
                 <label class="form__label" for="last-name">Last Name</label>
-                <input class="form__input" type="text" id="last-name" />
+                <input class="form__input" type="text" id="last-name" required/>
               </div>
               <div class="form__input-container">
                 <label class="form__label" for="email">Email</label>
-                <input class="form__input" type="email" id="email" />
+                <input class="form__input" type="email" id="email" required/>
               </div>
               <div class="form__input-container">
                 <label class="form__label" for="phone-number"
                   >Phone Number</label
                 >
-                <input class="form__input" type="text" id="phone-number" />
+                <input class="form__input" type="text" id="phone-number" required/>
               </div>
               <div class="form__input-container">
                 <label class="form__label" for="password">Password</label>
-                <input class="form__input" type="password" id="password" />
-                <span class="form__error-message"
+                <input class="form__input" type="password" id="password" required/>
+                <span class="form-error-message"
                   >* Passwords do not match</span
                 >
               </div>
               <div class="form__input-container">
-                <label class="form__label" for="password-confirmation"
+                <label class="form__label" for="passwordConfirmation"
                   >Confirm Password</label
                 >
                 <input
                   class="form__input"
                   type="password"
-                  id="password-confirmation"
-                />
+                  id="passwordConfirmation"
+                  required/>
               </div>
             </div>
           </form>
