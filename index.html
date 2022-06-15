@@ -5,76 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="grid">
       <div class="banner">
-        <div class="banner__background"></div>
-        <div class="banner__header">
-          <img src="assets/odin-lined.png" alt="odin logo" class="banner__header__logo"/>
-          <h2 class="banner__header__title">ODIN</h2>
+        <div class="background"></div>
+        <div class="header">
+          <img src="assets/images/odin-logo.png" alt="odin logo" class="header-logo"/>
+          <h2 class="header-title">ODIN</h2>
         </div>
-        <p class="banner__background-credit"> Photo by<a class="banner__background-credit__link"
+        <p class="background-credit"> Photo by <a class="background-credit-link"
             href="https://unsplash.com/@haliewestphoto"target="_blank">Halie West</a
-          > on <a class="banner__background-credit__link" href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
+          > on <a class="background-credit-link" href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
             >Unsplash</a>
         </p>
       </div>
 
       <div class="content">
-        <div class="content__header">
-          <p class="content__header__main-heading">
+        <div class="content-header">
+          <p class="content-header-main-heading">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams.
            <br> Sign up <em>now</em>  to get started.</p> 
-          <p class="content__header__secondary-heading">
+          <p class="content-header-secondary-heading">
             You <em>know</em> you want to.
           </p>
         </div>
-        <div class="content__main">
+        <div class="content-main">
           <form action="" method="get" class="form" id="form">
-            <h2 class="form__heading">Let's do this!</h2>
+            <h2 class="form-heading">Let's do this!</h2>
 
-            <div class="form__layout">
-              <div class="form__input-container">
-                <label class="form__label" for="first-name">First Name</label>
-                <input class="form__input" type="text" id="first-name" required>
+            <div class="form-layout">
+              <div class="form-input-container">
+                <label class="form-label" for="first-name">First Name</label>
+                <input class="form-input" type="text" id="first-name" >
               </div>
-              <div class="form__input-container">
-                <label class="form__label" for="last-name">Last Name</label>
-                <input class="form__input" type="text" id="last-name" required/>
+              <div class="form-input-container">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input class="form-input" type="text" id="last-name" />
               </div>
-              <div class="form__input-container">
-                <label class="form__label" for="email">Email</label>
-                <input class="form__input" type="email" id="email" required/>
+              <div class="form-input-container">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" />
               </div>
-              <div class="form__input-container">
-                <label class="form__label" for="phone-number"
+              <div class="form-input-container">
+                <label class="form-label" for="phone-number"
                   >Phone Number</label
                 >
-                <input class="form__input" type="text" id="phone-number" required/>
+                <input class="form-input" type="text" id="phone-number" />
               </div>
-              <div class="form__input-container">
-                <label class="form__label" for="password">Password</label>
-                <input class="form__input" type="password" id="password" required/>
-                <span class="form-error-message"
-                  >* Passwords do not match</span
+              <div class="form-input-container">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" required/>
+                <span id="form-error-message" class="form-error-message"
+                  ></span
                 >
               </div>
-              <div class="form__input-container">
-                <label class="form__label" for="passwordConfirmation"
+              <div class="form-input-container">
+                <label class="form-label" for="passwordConfirmation"
                   >Confirm Password</label
                 >
                 <input
-                  class="form__input"
+                  class="form-input"
                   type="password"
                   id="passwordConfirmation"
                   required/>
               </div>
             </div>
           </form>
-          <button class="form__submit-button" type="submit" form="form">
+          <button class="form-submit-button" type="submit" form="form">
             Create Account
           </button>
           <p class="login-message">
@@ -84,5 +84,5 @@
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </html>

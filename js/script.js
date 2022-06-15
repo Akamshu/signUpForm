@@ -5,6 +5,6 @@ var check = function() {
     document.getElementById('message').innerHTML = '';
   } else {
     document.getElementById('message').style.color = 'red';
-    document.getElementById('message').innerHTML = '*Password do not match';
+    document.getElementById('form-error-message').innerHTML = '*Password do not match';
   }
 }
